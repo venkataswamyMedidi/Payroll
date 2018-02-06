@@ -1,0 +1,353 @@
+
+hr{
+    margin: 5px 0 5px 0;
+}
+
+.test-nav{
+    background-color: white;
+    padding: 6px 10px 6px 28px;
+    font-size: 15px;
+}
+.pipe-class{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.forms-text{
+    color: white;
+    text-align: center;
+}
+
+label {
+    color: white;
+}
+
+.btn-clr{
+    background-color: #42d3af;
+}
+.btn-text{
+    color: #FFFFFF;
+}
+.btn-clr:hover{
+    background-color: #42d3af;
+    color: #FFFFFF;
+}
+.glyphicon-remove{
+    color: white;
+}
+
+.navbar{
+    border-radius: 0px;
+
+}
+.navbar-brand{
+    height: auto;
+}
+.btn-align{
+    margin-left: 20px;
+}
+
+.rate-heading{
+    margin-left: 20px;
+}
+
+.search-text{
+
+    background-color: black;
+    padding-top:20px;
+    padding-bottom:0px;
+
+}
+.text-center{
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.search-text .input-search{
+    height:40px;
+    padding-left:20px;
+    color:#333;
+    width: 20%;
+}
+
+.search-text .btn-search{
+    background: #da3e44;
+    font-family:Roboto;
+    border:none;
+    color:#FFF;
+    height: 38px;
+}
+.search-text h4{
+    color: #FFF;
+    font-weight: 700;
+}
+footer .menu li a{
+    font-family:Roboto;
+    color:white;
+    padding:10px;
+    text-decoration:none;
+}
+
+footer .menu li a:hover{
+    color:#7dabdb;
+}
+
+.fa.fa-facebook , .fa.fa-dropbox, .fa.fa-flickr , .fa.fa-github , .fa.fa-linkedin ,.fa,fa-tumblr ,.fa.fa-google-plus , .fa.fa-tumblr {
+    color:white;
+    font-size:20px;
+    padding:10px;
+    margin-bottom:25px;
+}
+
+.fa.fa-facebook:hover , .fa.fa-dropbox:hover , .fa.fa-flickr:hover  , .fa.fa-github:hover  , .fa.fa-linkedin:hover  ,.fa,fa-tumblr:hover  ,.fa.fa-google-plus:hover  , .fa.fa-tumblr:hover  {
+    color:#6794c2;
+}
+.icons{
+    padding-top: 30px;
+}
+
+.copyright-text p{
+    color: white;
+}
+
+.otp-form{
+    width: 30%;
+}
+.otp-input{
+    width: 50%;
+    margin : auto;
+}
+
+.link{
+    margin-left: 10px;
+}
+
+.scroll{
+    overflow-y: scroll;
+}
+.ui-paginator .ui-paginator-page, .ui-paginator .ui-paginator-next, .ui-paginator .ui-paginator-last, .ui-paginator .ui-paginator-first, .ui-paginator .ui-paginator-prev{
+    display: inline;
+}
+
+.fa.fa-facebook, .fa.fa-dropbox, .fa.fa-flickr, .fa.fa-github, .fa.fa-linkedin, .fa, fa-tumblr, .fa.fa-google-plus, .fa.fa-tumblr {
+    padding: 0px;
+    margin-bottom: 0px;
+}
+#signup-dp{
+    min-width: 300px;
+    height: 400px;
+    padding: 14px 14px 0;
+
+    background-color:#2d60a3;
+}
+
+#signup-dp .bottom{
+    background-color: #333333;
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+
+#signup-dp .form-group {
+    margin-bottom: 10px;
+}
+#login-dp{
+    min-width: 300px;
+    height: 300px;
+    padding: 14px 14px 0;
+
+    background-color:#2d60a3;
+}
+
+#login-dp .bottom{
+    background-color: #333333;
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+
+.form-group{
+    padding: 5px;
+}
+.navbar-xs { min-height:28px; height: 28px;}
+.navbar-xs .navbar-brand{ padding: 0px 12px;font-size: 16px;line-height: 28px; }
+.navbar-xs .navbar-nav > li > a {  padding-top: 0px; padding-bottom: 0px; line-height: 28px; }
+
+.navbar-nav li a{
+    color: #FFFFFF;
+}
+
+.navbar-xs .navbar-nav li>a{
+    background-color: red;
+
+}
+
+.navbar-xs .navbar-nav li>a:focus, .navbar-xs .navbar-nav li>a:hover {
+    background-color: #2d60a3;
+    color: #FFFFFF;
+}
+
+.profile{
+    padding-left: 10px;
+}
+
+tr{
+    cursor: pointer;
+}
+
+.modal-header {
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    display: block;
+    /*-webkit-margin-before: 1.67em;
+    -webkit-margin-after: 1.67em;*/
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.box{
+    background-color: lightgrey;
+    border: 0.5px solid black;
+    padding: 7px;
+    margin: 25px;
+    /*margin-top: 0px;*/
+
+}
+
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 30px;
+}
+.right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+
+input {
+    outline: none;
+}
+input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: inherit;
+    font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+
+input[type=search] {
+    /*background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;*/
+    border: solid 1px #ccc;
+    padding: 9px 10px 9px 32px;
+    width: 55px;
+
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    border-radius: 10em;
+
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+#demo-2 input[type=search] {
+    width: 15px;
+    padding-left: 10px;
+    color: transparent;
+    cursor: pointer;
+}
+#demo-2 input[type=search]:hover {
+    background-color: #fff;
+}
+#demo-2 input[type=search]:focus {
+    width: 170px;
+    padding-left: 15px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto;
+}
+#demo-2 input:-moz-placeholder {
+    color: transparent;
+}
+#demo-2 input::-webkit-input-placeholder {
+    color: transparent;
+}
+#demo-2 input:focus::-webkit-input-placeholder {
+    color:black;
+}
+.emptabs{
+    margin-left: 7%;
+    padding: 10px;
+}
+.ui-paginator-bottom {
+    border-top-width: 0;
+    float: right;
+}
+.vertical {
+    border-left: 1px solid black;
+    /*height: 200%;*/
+
+
+}
+.horizontal{
+    border-top: 1px solid black;
+    height: 100px;
+    width: 362px;
+    border-bottom-width: thin;
+    background-position-x: 55%;
+    /*border-radius: 10px 5% / 20px 30px;
+     background-position-y: 1000%;
+    *//* margin: 25px 50px 75px;*/
+}
+
+h5 .col-lg-4{
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.50rem;
+    text-align: center;
+}
+.h5,h5{
+    font-size: 1.50rem;
+    textAlign:'center';
+    /*color:dodgerblue;*/
+
+}
+
+
+.form-control:focus {
+    border-color: rgb(104, 145, 162);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+}
+
+.country{
+    font-size: 17px;
+}
