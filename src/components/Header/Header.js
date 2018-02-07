@@ -218,7 +218,7 @@ class Header extends Component {
                                 <ul className="nav navbar-nav">
                                     <li className="test" ><Link to={"/employees/active"} style={text} activeStyle={{backgroundColor: '#2d60a3'}}>Employees</Link></li>
                                     <li className="test" ><Link to={"/vendors"} style={text} activeStyle={{backgroundColor: '#2d60a3'}}>Vendors</Link></li>
-                                    {/*<li className="test" ><Link to={"/clients"} style={text} activeStyle={{backgroundColor: '#2d60a3'}}>Clients</Link></li>*/}
+                                    <li className="test" ><Link to={"/invoices"} style={text} activeStyle={{backgroundColor: '#2d60a3'}}>Invoices</Link></li>
                                     {/*
                 <div className="test-nav">
                     <a ><Link to={"/home"} activeStyle={{color: 'red'}}>Home</Link></a><span className="pipe-class">|</span>

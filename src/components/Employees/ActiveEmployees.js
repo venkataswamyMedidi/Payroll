@@ -15,6 +15,7 @@ require("primereact/resources/primereact.min.css");
 const MY_API_KEY = "AIzaSyCoOFNGyhS0qoHWtvbQJX-v1g0LlWG4KP4";
 const tab = require('../../images/tabner.jpeg');
 
+
 class ActiveEmployees extends Component {
 
     constructor() {
@@ -40,6 +41,7 @@ class ActiveEmployees extends Component {
 */
         this.onFilter = this.onFilter.bind(this);
         this.rowExpansionTemplate = this.rowExpansionTemplate.bind(this);
+
     }
 
     handleInputChange(event) {
@@ -137,8 +139,8 @@ class ActiveEmployees extends Component {
         }
     }
 
-    selectCountry (val) {
 
+    selectCountry (val) {
         this.setState({ country: val });
 
     }
@@ -146,10 +148,10 @@ class ActiveEmployees extends Component {
 
 
     selectRegion (val) {
-
         this.setState({ region: val });
 
     }
+
 
 
     handleCreateEmployee(event) {
@@ -239,6 +241,12 @@ class ActiveEmployees extends Component {
         </div>;
     }
 
+    emailTemplate(rowData, column) {
+        let email = rowData.email_id;
+        let color='blue'
+        return <a href="mailto:{email}"><span style={{color:color}}>{email}</span></a>
+    }
+
     render() {
         const {search, value} = this.state;
 
@@ -285,7 +293,7 @@ class ActiveEmployees extends Component {
                                 sortable={true}/>
                         <Column columnKey="last_name" field="last_name" header="Last Name"
                                 sortable={true}/>
-                        <Column columnKey="email_id" field="email_id" header="Email" sortable={true}/>
+                        <Column columnKey="email_id" field="email_id" header="Email" body={this.emailTemplate}sortable={true}/>
                         <Column columnKey="mobile_num" field="mobile_num" header="Mobile"
                                 sortable={true}/>
                         <Column columnKey="ssn" field="ssn" header="SSN"
@@ -453,7 +461,6 @@ class ActiveEmployees extends Component {
                                                 value={region}
                                                 onChange={(val) => this.selectRegion(val)} />
                                             </div>
-
                                         </div>
 
                                         <div className="row">
@@ -760,7 +767,7 @@ class ActiveEmployees extends Component {
 
                                                 <h4 style={{color: '#d8b945'}}> Address_Line2:</h4><input type="text"
                                                                                                     name="address"
-                                                                                                    value={this.line1.split('')[3]}/>
+                                                                                                    value={this.line1.split(' ')[3]}/>
 
 
                                                 <h4 style={{color: '#d8b945'}}> State :</h4><input type="text"
@@ -816,6 +823,7 @@ class ActiveEmployees extends Component {
                                       style={{fontSize:"24px"}}   data-toggle="modal" data-target="#experienceDetails">
                                 </span>
                                 </div>
+
                                 <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
                                 <button type="submit" className="btn btn-primary" data-dismiss="modal"
                                         onClick={this.handleCreateEmployee.bind(this)}>ADD

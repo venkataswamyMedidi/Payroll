@@ -12,7 +12,9 @@ const mainReducer = (state = {
     employeeAddress: [],
     vendorEmployees: [],
     vendorInvoices: [],
-    vendorAddress:[]
+    vendorAddress:[],
+    tabnerinvoices:[]
+
 }, action) => {
     switch (action.type) {
         case "LOGIN":
@@ -89,6 +91,12 @@ const mainReducer = (state = {
             state = {
                 ...state,
                 tabnerVendors: updatedVendors
+            };
+            break;
+        case "TABNER_INVOICES":
+            state = {
+                ...state,
+                tabnerInvoices: action.payload
             };
             break;
         case "EMPLOYEE_RATES":

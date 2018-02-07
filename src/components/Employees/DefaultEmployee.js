@@ -181,7 +181,7 @@ class DefaultEmployee extends Component {
                                                                    placeholder="Visa_no"
                                                                    value={this.props.main.defaultEmployee.last_name}/>
                                                         </h4>
-                                                        <h4 style={{color: "#041c3d"}}>Visa Status:
+                                                        <h4 style={{color: "#041c3d",fontSize:"14px"}}>Visa Status:
                                                             <input type="text" name="add" class="form-control"
                                                                    placeholder="Visa Status"
                                                                    value={this.props.main.defaultEmployee.last_name}/>

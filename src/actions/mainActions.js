@@ -129,3 +129,11 @@ export function setVendorAddress(vendor_Address) {
     };
 
 }
+
+export function setTabnerInvoices(invoices) {
+    return {
+        type: "TABNER_INVOICES",
+
+        payload: invoices
+    };
+}
