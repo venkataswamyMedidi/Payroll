@@ -424,6 +424,23 @@ class ActiveEmployees extends Component {
                                                    onChange={this.handleInputChange} />
                                         </div>
 
+                                        <div className="form-group col-md-6">
+                                            <label htmlFor="emp_name">Issued Country:</label>
+                                            {/* <input type="text" placeholder="Issued Country" className="form-control"
+                                                   id="pass" name="pass"
+                                                   onChange={this.handleInputChange} required/>
+                                            */}
+
+                                            <CountryDropdown style={{fontsize:"35px"}}
+                                                             value={country}
+                                                             onChange={(val) => this.selectCountry(val)} />
+                                            {/*
+                                            <RegionDropdown
+                                                country={country}
+                                                value={region}
+                                                onChange={(val) => this.selectRegion(val)} />
+*/}
+                                        </div>
                                         <div class="form-group col-md-6">
                                             <label htmlFor="emp_name">Issued Date:</label>
                                             <input type="date" className="form-control" placeholder="Issued Date"
@@ -445,23 +462,11 @@ class ActiveEmployees extends Component {
                                             <input type="date" className="form-control" placeholder="Expiry Date"
                                                    name="terminated_date"
                                                    onChange={this.handleInputChange} required/>
-
-
-                                                <label htmlFor="emp_name">Issued Country:</label>
-                                                {/* <input type="text" placeholder="Issued Country" className="form-control"
-                                                   id="pass" name="pass"
-                                                   onChange={this.handleInputChange} required/>
-                                            */}
-                                            <div className="country">
-                                            <CountryDropdown style={{fontsize:"35px"}}
-                                                value={country}
-                                                onChange={(val) => this.selectCountry(val)} />
-                                            <RegionDropdown
-                                                country={country}
-                                                value={region}
-                                                onChange={(val) => this.selectRegion(val)} />
-                                            </div>
                                         </div>
+
+
+
+
 
                                         <div className="row">
                                             <div className="col-xs-3"></div>
@@ -749,13 +754,13 @@ class ActiveEmployees extends Component {
                                             <div className="col-lg-6">
                                                 <h4 style={{color: '#d8b945'}}> Address_Line1:</h4><input type="text"
                                                                                                     name="address"
-                                                                                                    value={this.line1}/>
+                                                                                                    value={this.line1.split(' ')[0]}/>
                                                 <h4 style={{color: '#d8b945'}}> City :</h4>
                                                 <input type="text" name="city" value={this.line2}/>
 
                                                 <h4 style={{color: '#d8b945'}}> ZipCode :</h4><input type="text"
                                                                                                      name="country"
-                                                                                                     value={this.line3.split(' ')[1]}/>
+                                                                                                     value={this.line3.split(' ')[0]}/>
 
 
                                             </div>
@@ -767,7 +772,7 @@ class ActiveEmployees extends Component {
 
                                                 <h4 style={{color: '#d8b945'}}> Address_Line2:</h4><input type="text"
                                                                                                     name="address"
-                                                                                                    value={this.line1.split(' ')[3]}/>
+                                                                                                    value={this.line1.slice(4,-2)}/>
 
 
                                                 <h4 style={{color: '#d8b945'}}> State :</h4><input type="text"
